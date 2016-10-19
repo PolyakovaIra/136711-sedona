@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Irina Polyakova](https://up.htmlacademy.ru/htmlcss/15/user/136711).
-* Наставник: `Неизвестно`.
+* Наставник: [Shamsiev Philip].
 
 ---
 
