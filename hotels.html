@@ -44,13 +44,13 @@
             <div class="form">
               <p>стоимость в сутки(Р):</p>
               <div class="cost">
-                <div class="start">
-                  <label for="start">от</label>
-                  <input id="start" type="text" value="0">
+                <div class="value">
+                  <label for="cost-value">от</label>
+                  <input id="cost-value" type="text" value="0">
                 </div>
-                <div class="finish">
-                  <label for="finish">до</label>
-                  <input id="finish" type="text" value="3000">
+                <div class="value">
+                  <label for="cost-value">до</label>
+                  <input id="cost-value" type="text" value="3000">
                 </div>
               </div>
               <div class="scale">
@@ -58,17 +58,15 @@
                 <div class="circle"></div>
                 <div class="circle"></div>
               </div>
-              <div class="button-result">
-                <input type="submit" value="показать">
-              </div>
+              <input class="button-result" type="submit" value="показать">
             </div>
             </section>
             <section class="results">
               <p>найдено:3</p>
               <div class="sorting">сортировка:
-                <div class="found sorting-coast"> по цене </div>
-                <div class="found sorting-type">  по типу</div>
-                <div class="found sorting-rating"> по рейтингу</div>
+                <a class="found" href="cost"> по цене </a>
+                <a class="found" href="type">  по типу</a>
+                <a class="found" href="range"> по рейтингу</a>
               </div>
               <div class="arrow">
                 <a href="arrow-up"></a>
@@ -80,107 +78,86 @@
                 <img src="http://placehold.it/20x20">
               </div>
               <div class="info-hotel">
-                <div class="name-hotel">
-                  amara resort & spa
-                </div>
-                <div class="type-hotel">
-                  гостиница
-                </div>
-                <div class="cost-hotel">
-                  от 3500 р.
+                <div class="header-hotel">
+                  <a href="header-hotel">amara resort & spa</a>
                 </div>
                 <div class="detail-hotel">
-                  <input tupe="button" value="подробнее">
+                  <div class="type-hotel">гостиница</div>
+                  <a class="details" href="details">подробнее</a>
                 </div>
-                <div class="booking">
-                  <input tupe="button" value="Забронировать">
+                <div class="detail-hotel">
+                  <div class="type-hotel">от 3000 р.</div>
+                  <a class="details" href="booking">Забронировать</a>
                 </div>
               </div>
               <div class="rating">
                 <div class="stars">
                   <img src="http://placehold.it/20x20">
                 </div>
-                <div class="rating-hotel">
-                  <p>рейтинг: 8,5</p>
+                <div class="rating-hotel">рейтинг: 8,5</div>
+              </div>
+            </section>
+            <section class="hotel">
+              <div class="photo-hotel">
+                <img src="http://placehold.it/20x20">
+              </div>
+              <div class="info-hotel">
+                <div class="header-hotel">
+                  <a href="header-hotel">desert quail inn</a>
+                </div>
+                <div class="detail-hotel">
+                  <div class="type-hotel">мотель</div>
+                  <a class="details" href="details">подробнее</a>
+                </div>
+                <div class="detail-hotel">
+                  <div class="type-hotel">от 3000 р.</div>
+                  <a class="details" href="booking">Забронировать</a>
                 </div>
               </div>
-              </section>
-              <section class="hotel">
-                <div class="photo-hotel">
+              <div class="rating">
+                <div class="stars">
                   <img src="http://placehold.it/20x20">
                 </div>
-                <div class="info-hotel">
-                  <div class="name-hotel">
-                    desert quail inn
-                  </div>
-                  <div class="type-hotel">
-                    мотель
-                  </div>
-                  <div class="cost-hotel">
-                    от 2000 р.
-                  </div>
-                  <div class="detail-hotel">
-                    <input tupe="button" value="подробнее">
-                  </div>
-                  <div class="booking">
-                    <input tupe="button" value="Забронировать">
-                  </div>
+                <div class="rating-hotel">рейтинг: 8,9</div>
+              </div>
+            </section>
+            <section class="hotel">
+              <div class="photo-hotel">
+                <img src="http://placehold.it/20x20">
+              </div>
+              <div class="info-hotel">
+                <div class="header-hotel">
+                  <a href="header-hotel">villas at poco diablo</a>
                 </div>
-                <div class="rating">
-                  <div class="stars">
-                    <img src="http://placehold.it/20x20">
-                  </div>
-                  <div class="rating-hotel">
-                    <p>рейтинг: 8,9</p>
-                  </div>
+                <div class="detail-hotel">
+                  <div class="type-hotel">апартаменты</div>
+                  <a class="details" href="details">подробнее</a>
                 </div>
-              </section>
-              <section class="hotel">
-                <div class="photo-hotel">
+                <div class="detail-hotel">
+                  <div class="type-hotel">от 4000 р.</div>
+                  <a class="details" href="booking">Забронировать</a>
+                </div>
+              </div>
+              <div class="rating">
+                <div class="stars">
                   <img src="http://placehold.it/20x20">
-                </div>
-                <div class="info-hotel">
-                  <div class="name-hotel">
-                    villas at poco diablo
                   </div>
-                  <div class="type-hotel">
-                    апартаменты
-                  </div>
-                  <div class="cost-hotel">
-                    от 4000 р.
-                  </div>
-                  <div class="detail-hotel">
-                    <input tupe="button" value="подробнее">
-                  </div>
-                  <div class="booking">
-                    <input tupe="button" value="Забронировать">
-                  </div>
-                </div>
-                <div class="rating">
-                  <div class="stars">
-                    <img src="http://placehold.it/20x20">
-                  </div>
-                  <div class="rating-hotel">
-                    <p>рейтинг: 8,5</p>
-                  </div>
-                </div>
-              </section>
+                <div class="rating-hotel">рейтинг: 9,2</div>
+              </div>
+            </section>
             </main>
             <footer class="footer">
-              <div class="tag">#VISITSEDONA
-                </div>
+              <div class="tag">#VISITSEDONA</div>
               <div class="social">
                 <a class="social-link tw" href="http://twitter.com"></a>
                 <a class="social-link fb" href="http://www.facebook.com"></a>
                 <a class="social-link yt" href="http://youtube.com"></a>
                 </div>
-                <div class="makers">
-                  <p>website by
+                <div class="makers">website by
                     <a href="http://htmlacademy.ru">
                     <img src="htmlacademy.png" alt="htmlacademy"></a>
-                  </p>
-                  </div>
-              </footer>
-            </div>
+                </div>
+            </footer>
+          </div>
  </body>
 </html>
