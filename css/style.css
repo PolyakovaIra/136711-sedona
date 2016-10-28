@@ -1,0 +1,21 @@
+.header {
+  font-family: Myriad Pro;
+  font-size: 14px;
+  font-weight: regular;
+  line-height: 26px;
+  color: 333333;
+}
+.main-preview {
+  font-family: PTSans;
+  font-size: 14px;
+  font-weight: regular;
+  line-height: 26px;
+  color: 333333;
+}
+.makers {
+  font-family: PTSans;
+  font-size: 14px;
+  font-weight: regular;
+  line-height: 26px;
+  color: 000000;
+}
