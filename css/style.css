@@ -1,21 +1,22 @@
-.header {
-  font-family: Myriad Pro;
+html,
+body {
+  font-family: "PTSans", "Arial", "Myriad Pro", sans-serif;;
   font-size: 14px;
   font-weight: regular;
+  text-transform: uppercase;
   line-height: 26px;
-  color: 333333;
+  color: #333333;
 }
-.main-preview {
+.h2 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #000000;
+}
+.p {
   font-family: PTSans;
   font-size: 14px;
   font-weight: regular;
-  line-height: 26px;
-  color: 333333;
-}
-.makers {
-  font-family: PTSans;
-  font-size: 14px;
-  font-weight: regular;
-  line-height: 26px;
-  color: 000000;
+  line-height: 21px;
+  color: #333333;
 }
