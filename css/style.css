@@ -1,128 +1,18 @@
-html,
 body {
+  width: 1200px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: regular;
-  text-transform: uppercase;
   line-height: 26px;
   color: #333333;
-  width: 1200px;
 }
-.container {
-  width: 1200px;
-}
-.header {
-  width: 1200px;
-  height: 58px;
-  text-align: center;
-}
-.main-menu-list .link {
-  width: 240px;
-  padding-left: 72px;
-  padding-right: 72px;
-  display: inline-block;
-}
-.logo {
-  width: 152px;
-  margin: 0 auto;
-}
-.main {
-  width: 1200px;
-}
-.photo-preview {
-  width: auto;
-}
-.main-preview {
-  display: block;
-  text-align: center;
-  width: 1200px;
-  height: 210px;
-  margin-bottom: 7px;
-}
-.moments {
-  display: block;
-  width: 1200px;
-  margin-bottom: 7px;
-}
-.reasons {
-  display: block;
-  width: 1200px;
-  margin-bottom: 7px;
-}
-.reason {
-  display: inline-block;
-  width: 33%;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-.view {
-  display: inline-block;
-  width: auto;
-  height: auto;
-}
-.fields {
-  display: block;
-  width: 100%;
-  margin-bottom: 7px;
-}
-.field {
-  display: inline-block;
-  width: 33%;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-.selection-data {
-  display: block;
-  width: auto;
-  margin-bottom: 7px;
-}
-.selection-data a {
-  display: block;
-  width: 566px;
-  height: 86px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.map {
-  display: block;
-  width: auto;
-  height: auto;
-}
-.footer {
-  display: block;
-  width: 1200px;
-  height: 120px;
-  margin-top: 7px;
-}
-.tag {
-  display: inline-block;
-  width: 33%;
-  padding-left: 130px;
-  padding-right: 130px;
-  float: left;
-  margin: 0;
-}
-.social {
-  display: inline-block;
-  width: 33%;
-  padding-left: 120px;
-  padding-right: 120px;
-  float: left;
-  margin: 0;
-}
-
-.h2 {
+.main-preveiw {
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
   color: #000000;
 }
-.p {
-  line-height: 21px;
+.selection-data a {
+  font-weight: bold;
+  color: #ffffff;
 }
