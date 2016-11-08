@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="img" rel="image">
     <meta charset="utf-8">
@@ -26,8 +27,8 @@
         <div class="photo-preview">
         </div>
         <div class="main-preview">
-          <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-          <p>РАСМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ КАНЬОН!</p>
+          <h2 class="main-preveiw-header">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+          <p class="main-preveiw-text">РАСМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ КАНЬОН!</p>
         </div>
         <section class="moments">
           <div class="reason left">
@@ -41,17 +42,17 @@
         </section>
         <section class="fields">
           <div class="field">
-            <img src="img/house.png">
+            <span class="home"></span>
             <h2 class="field-header">ЖИЛЬЕ</h2>
             <p class="field-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
           </div>
           <div class="field">
-            <img src="img/Burger.png">
+            <span class="home"></span>
             <h2 class="field-header">ЕДА</h2>
             <p class="field-text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
           </div>
           <div class="field">
-            <img src="img/present.png">
+            <span class="home"></span>
             <h2 class="field-header"> СУВЕНИРЫ</h2>
             <p class="field-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСНОГО ПРОИЗВОДСТВА</p>
           </div>
@@ -86,19 +87,25 @@
         <section class="selection-data">
           <h2 class="selection-header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="selection-text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          <a href="sedona-hotels.com">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <span class="selection-data-button">
+            <a href="sedona-hotels.com" class="data-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          </span>
         </section>
         <div class="button">
           <form method="get" class="search">
             <div class="form-label">
               <label for="form-data" class="form-data">ДАТА ЗАЕЗДА:</label>
-              <input id="form-data" type="date" name="calendar" value="24 апреля 2016" class="form-data-lable">
-              <img src="img/calendar.png">
+              <span class="data-calendar">
+                <input id="form-data" type="date" name="calendar" value="24 апреля 2016" class="form-data-lable">
+                <span class="calendar"></span>
+              </span>
             </div>
             <div class="form-label">
               <label for="form-data" class="form-data">ДАТА ВЫЕЗДА:</label>
-              <input  id="form-data" type="date" name="calendar" value="4 июля 2016" class="form-data-lable">
-              <img src="img/calendar.png">
+              <span class="data-calendar">
+                <input  id="form-data" type="date" name="calendar" value="4 июля 2016" class="form-data-lable">
+                <span class="calendar"></span>
+              </span>
             </div>
             <div class="quantity">
               <label for="human"> ВЗРОСЛЫЕ</lable>
