@@ -16,10 +16,10 @@
         </div>
         <div class="main-menu">
           <ul class="main-menu-list clearfix">
-            <li class="link one"><a href="#info">Информация</a></li>
-            <li class="link one"><a href="#photo">Фото и видео</a></li>
-            <li class="link two"><a href="#map">Карта штата</a></li>
-            <li class="link two"><a href="hostel">Гостиницы</a></li>
+            <li class="link"><a href="#info">Информация</a></li>
+            <li class="link"><a href="#photo">Фото и видео</a></li>
+            <li class="link"><a href="#map">Карта штата</a></li>
+            <li class="link"><a href="hostel">Гостиницы</a></li>
           </ul>
         </div>
       </header>
@@ -30,44 +30,42 @@
           <h2 class="main-preveiw-header">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
           <p class="main-preveiw-text">РАСМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ КАНЬОН!</p>
         </div>
-        <section class="moments">
-          <div class="reason left">
+        <section class="moments clearfix">
+          <div class="reason reason-left">
             <h2 class="reason-header">НАСТОЯЩИЙ ГОРОДОК</h2>
             <p class="reason-number">- №1 -</p>
             <p class="reason-text">СЕДОНА - НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="view photo1">
-            <img src="img/photo1.jpg">
           </div>
         </section>
         <section class="fields">
           <div class="field">
-            <span class="home"></span>
+            <div class="home"></div>
             <h2 class="field-header">ЖИЛЬЕ</h2>
             <p class="field-text">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В КИНО!</p>
           </div>
           <div class="field">
-            <span class="home"></span>
+            <div class="home burger"></div>
             <h2 class="field-header">ЕДА</h2>
             <p class="field-text">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
           </div>
           <div class="field">
-            <span class="home"></span>
+            <div class="home present"></div>
             <h2 class="field-header"> СУВЕНИРЫ</h2>
             <p class="field-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСНОГО ПРОИЗВОДСТВА</p>
           </div>
         </section>
-        <section class="moments">
-          <div class="reason right">
+        <section class="moments clearfix">
+          <div class="reason reason-right">
             <h2 class="reason-header">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
             <p class="reason-number">- №2 -</p>
             <p class="reason-text">ДА, ПО НЕМУ ВЫ МОЖЕТЕ ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
           </div>
           <div class="view photo2">
-            <img src="img/photo2.jpg">
           </div>
         </section>
-        <section class="reasons">
+        <section class="reasons clearfix">
           <div class="reason">
             <h2 class="reason-header">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
             <p class="reason-number">-№3-</p>
@@ -87,35 +85,37 @@
         <section class="selection-data">
           <h2 class="selection-header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="selection-text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          <span class="selection-data-button">
-            <a href="sedona-hotels.com" class="data-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
-          </span>
+          <a href="hotels.html" class="data-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
         <div class="button">
           <form method="get" class="search">
             <div class="form-label">
-              <label for="form-data" class="form-data">ДАТА ЗАЕЗДА:</label>
-              <span class="data-calendar">
-                <input id="form-data" type="date" name="calendar" value="24 апреля 2016" class="form-data-lable">
-                <span class="calendar"></span>
-              </span>
+              <label for="form-data" class="label">ДАТА ЗАЕЗДА:</label>
+              <div class="data-calendar">
+                <input id="form-data" type="text" value="24 апреля 2016" class="input-data">
+                <div class="calendar"></div>
+              </div>
             </div>
             <div class="form-label">
-              <label for="form-data" class="form-data">ДАТА ВЫЕЗДА:</label>
-              <span class="data-calendar">
-                <input  id="form-data" type="date" name="calendar" value="4 июля 2016" class="form-data-lable">
-                <span class="calendar"></span>
-              </span>
+              <label for="form-data" class="label">ДАТА ВЫЕЗДА:</label>
+              <div class="data-calendar">
+                <input  id="form-data" type="text" value="4 июля 2016" class="input-data">
+                <div class="calendar"></div>
+              </div>
             </div>
             <div class="quantity">
-              <label for="human"> ВЗРОСЛЫЕ</lable>
-              <span class="quantity-human plus"><img src="img/plus.png"></span>
-              <input id="human" type="text" class="quantity-human plus">
-              <span class="quantity-human plus"><img src="img/plus.png"></span>
-              <label for="human"> ДЕТИ</lable>
-              <span class="quantity-human plus"><img src="img/plus.png"></span>
-              <input id="human" type="text" class="quantity-human plus">
-              <span class="quantity-human plus"><img src="img/plus.png"></span>
+              <label for="human" class="quantity-label"> ВЗРОСЛЫЕ</lable>
+                <div class="amt">
+                  <div class="quantity-human"></div>
+                  <input id="human" type="text" class="amount" value="2">
+                  <div class="quantity-human plus"></div>
+                </div>
+              <label for="human" class="quantity-label children"> ДЕТИ</lable>
+                <div class="amt">
+                  <div class="quantity-human"></div>
+                  <input id="human" type="text" class="amount" value="0">
+                  <div class="quantity-human plus"></div>
+                </div>
             </div>
             <input type="submit" value="НАЙТИ" class="submit">
           </form>
@@ -124,7 +124,7 @@
           <img src="img/map.png">
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer clearfix">
         <div class="tag">#VISITSEDONA</div>
         <div class="social">
           <a class="social-link tw" href="http://twitter.com"></a>
@@ -132,9 +132,7 @@
           <a class="social-link yt" href="http://youtube.com"></a>
         </div>
         <div class="makers">website by
-          <a href="img/htmlacademy.png">
-            <img src="img/htmlacademy.png" alt="htmlacademy">
-          </a>
+          <a href="img/htmlacademy.png"></a>
         </div>
       </footer>
     </div>
