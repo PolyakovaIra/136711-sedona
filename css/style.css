@@ -263,7 +263,6 @@ body {
   background:url("../img/calendar.png") no-repeat center;
 }
 .quantity {
-  width: 460px;
   margin-bottom: 54px;
   vertical-align: middle;
   font-size: 0;
@@ -314,6 +313,9 @@ body {
   width: 40px;
   margin-left: 52px;
   margin-right: 25px;
+}
+.human{
+  margin-bottom: 0;
 }
 .submit {
   display: block;
