@@ -33,8 +33,8 @@ body {
   width: 20%;
   list-style-type: none;
   margin-bottom: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -43,6 +43,12 @@ body {
 .link a{
   text-decoration: none;
   color: #000000;
+}
+.link:first-child{
+  text-align: left;
+}
+.link:last-child{
+  text-align: right;
 }
 .link:nth-child(2){
   margin-right: 20%;
@@ -54,10 +60,9 @@ body {
 }
 .photo-preview {
   height: 566px;
-  margin-bottom: 58px;
-  background: url("../img/introduce1.jpg") no-repeat;
+  background: #869eb2 url("../img/introduce1.jpg") no-repeat;
 }
-.main-preveiw {
+.main-preview {
   padding-top: 58px;
   padding-bottom: 55px;
   line-height: 26px;
@@ -126,14 +131,14 @@ body {
   width: 800px;
   height: 256px;
   margin-left: 0px;
-  background: url("../img/photo1.jpg");
+  background: #9e785c url("../img/photo1.jpg") no-repeat center;
 }
 .photo2{
   float:left;
   width: 800px;
   height: 256px;
   margin-left: 0px;
-  background: url("../img/photo2.jpg");
+  background: #81523a url("../img/photo2.jpg") no-repeat center;
 }
 .fields {
   margin-bottom: 0px;
@@ -259,11 +264,11 @@ body {
 }
 .calendar {
   position: absolute;
-  top: 8px;
+  top: 9px;
   right: 9px;
   width: 21px;
   height: 22px;
-  background:url("../img/calendar.png") no-repeat center;
+  background: url("../img/calendar.png") no-repeat center;
 }
 .quantity {
   margin-bottom: 54px;
@@ -330,15 +335,18 @@ body {
   display: block;
   width: 458px;
   margin: 0 auto;
-  padding-top: 17px;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 21px;
   font-weight: bold;
   background-color: #81b3d2;
+  border: none;
+  outline: none;
   color: #ffffff;
   text-align: center;
 }
 .map {
-
+  height: 593px;
 }
 .footer {
   margin-top: 0px;
@@ -370,7 +378,7 @@ body {
   width: 46px;
   height: 48px;
   margin: 0 auto;
-  margin-right: 10px;
+  margin-right: 6px;
   background: #81b3d2 url("../img/tw.png") no-repeat center;
 }
 .fb{
@@ -386,12 +394,205 @@ body {
   padding-top: 35px;
   padding-bottom: 35px;
   font-size: 14px;
+  text-transform: uppercase;
   vertical-align: middle;
   text-align: center;
 }
-.academy a{
+.academy {
+  display: inline-block;
   width: 113px;
   height: 40px;
+  background: url("../img/htmlacademy.png") no-repeat center;
   vertical-align: middle;
+}
+.photo{
+  background: #81523a url("../img/filter_background.jpg") no-repeat center;
+  padding-top: 20px;
+  padding-left: 70px;
+  padding-right: 60px;
+
+}
+.option{
+  float:left;
+  width: 166px;
+  margin-right: 80px;
+  text-transform: uppercase;
+  line-height: 21px;
+  color:#ffffff;
+}
+.option-head{
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 21px;
+  color:#ffffff;
+}
+.filter{
+  display: inline-block;
+  width: 140px;
+  margin-bottom: 15px;
+  font-size: 0;
+  vertical-align: middle;
+}
+.input-filter{
+  display: inline-block;
+  margin-right:10px;
+
+}
+.label-filter{
+  display:inline-block;
+  font-size: 14px;
+}
+.form{
+  float:right;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  color:#ffffff;
+}
+.cost{
+  display:inline-block;
+  width:314px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+  border: 2px solid #fafafa;
+  font-size: 0;
+}
+.value{
+  display: inline-block;
+  width: 156px;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
+  vertical-align: middle;
+}
+.label-value{
+  display: inline-block;
+  width: 22px;
+}
+.input-value{
+  display: inline-block;
+  width: 34px;
+  text-align: left;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+.button-result{
+  display: inline-block;
+  width: 133px;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border: 2px solid #fafafa;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  color:#ffffff;
+  text-align: center;
+  vertical-align: middle;
+}
+.results{
+  padding-top:15px;
+  padding-left:70px;
+  padding-right: 60px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+
+}
+.result-head{
+  display: inline-block;
+  width: 117px;
+  margin-right: 44px;
+  vertical-align: middle;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.sorting{
+  display: inline-block;
+  width: 360px;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sorting-head{
+  display: inline-block;
+  width: 77px;
+  margin-right: 33px;
+}
+.found{
+  display: inline-block;
+  width: 78px;
+  color: #81b3d2;
+}
+.arrows{
+  float:right;
+  width: 44px;
+  padding-top: 22px;
+  font-size: 0;
+  vertical-align: middle;
+}
+.arrow{
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  margin-right: 7px;
+  vertical-align: middle;
+  background: url("../img/arrow_up.png") no-repeat center;
+}
+.down{
+  background: url("../img/arrow_down.png") no-repeat center;
+}
+.hotel{
+  padding-left: 70px;
+  padding-top: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.photo-hotel{
+  float:left;
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+}
+.info-hotel{
+  float:left;
+  width: 264px;
+  text-transform: uppercase;
+}
+.header-hotel{
+  width: 230px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color:#000000;
+  margin-bottom: 10px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.detail-hotel{
+  display: inline-block;
+  width: 110px;
+  font-size: 0;
+}
+.type-hotel{
+  width: 100px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.details{
+
+}
+.booking{
+  width: 142px;
 }

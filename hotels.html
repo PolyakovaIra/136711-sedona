@@ -11,8 +11,11 @@
   <body>
     <div class="container">
       <header class="header">
+        <div class="logo">
+          <img src="img/logo.png">
+        </div>
         <div class="main-menu">
-          <ul class="main-menu-list">
+          <ul class="main-menu-list clearfix">
             <li class="link"><a href="#info">Информация</a></li>
             <li class="link"><a href="#photo">Фото и видео</a></li>
             <li class="link"><a href="#map">Карта штата</a></li>
@@ -21,59 +24,72 @@
         </div>
       </header>
       <main>
-        <div class="photo">
-          <section class="filter">
-            <form class="container-option" method="get">
-              <div class="option">Инфраструктура
-                <input id="pool" type="checkbox" checked>
-                <label for="pool">Бассейн</label>
-                <input id="parking" type="checkbox">
-                <label for="parking">Парковка</label>
-                <input id="wi-fi" type="checkbox">
-                <label for="wi-fi">Wi-Fi</label>
+        <div class="photo clearfix">
+          <form class="container-option" method="get">
+            <div class="option">
+              <h1 class="option-head">Инфраструктура</h1>
+              <div class="filter">
+                <input id="pool" type="checkbox" checked class="input-filter">
+                <label for="pool" class="label-filter">Бассейн</label>
               </div>
-              <div class="option">Тип жилья
-                <input id="hotel"type="checkbox" checked>
-                <label for="hotel">гостиница</label>
-                <input id="motel" type="checkbox" checked>
-                <label for="motel">мотель</label>
-                <input id="apartments"type="checkbox" checked>
-                <label for="apartments">Апартаменты</label>
+              <div class="filter">
+                <input id="parking" type="checkbox" class="input-filter">
+                <label for="parking" class="label-filter">Парковка</label>
               </div>
-              <div class="form">
-                <p>стоимость в сутки(Р):</p>
-                <div class="cost">
-                  <div class="value">
-                    <label for="cost-value">от</label>
-                    <input id="cost-value" type="text" value="0">
-                  </div>
-                  <div class="value">
-                    <label for="cost-value">до</label>
-                    <input id="cost-value" type="text" value="3000">
-                  </div>
-                </div>
-                <div class="scale">
-                  <div class="range"></div>
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-                  <input class="button-result" type="submit" value="показать">
-                </div>
-              </section>
+              <div class="filter">
+                <input id="wi-fi" type="checkbox" class="input-filter">
+                <label for="wi-fi" class="label-filter">Wi-Fi</label>
+              </div>
             </div>
-            <section class="results">
-              <p>найдено:3</p>
-              <div class="sorting">сортировка:
+            <div class="option">
+              <h1 class="option-head">Тип жилья</h1>
+              <div class="filter">
+                <input id="hotel"type="checkbox" checked class="input-filter">
+                <label for="hotel" class="label-filter">гостиница</label>
+              </div>
+              <div class="filter">
+                <input id="motel" type="checkbox" checked class="input-filter">
+                <label for="motel" class="label-filter">мотель</label>
+              </div>
+              <div class="filter">
+                <input id="apartments"type="checkbox" checked class="input-filter">
+                <label for="apartments" class="label-filter">Апартаменты</label>
+              </div>
+            </div>
+            <div class="form">
+              <h1 class="option-head">стоимость в сутки(Р):</h1>
+              <div class="cost">
+                <div class="value">
+                  <label for="cost-value" class="label-value">от</label>
+                  <input id="cost-value" type="text" value="0" class="input-value">
+                </div>
+                <div class="value">
+                  <label for="cost-value" class="label-value">до</label>
+                  <input id="cost-value" type="text" value="3000" class="input-value">
+                </div>
+              </div>
+              <div class="scale">
+                <div class="range"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+              </div>
+              <input class="button-result" type="submit" value="показать">
+            </div>
+          </div>
+          <section class="results clearfix">
+              <p class="result-head">найдено:3</p>
+              <div class="sorting">
+                <p class="sorting-head">сортировка:</p>
                 <a class="found" href="cost"> по цене </a>
                 <a class="found" href="type">  по типу</a>
                 <a class="found" href="range"> по рейтингу</a>
               </div>
-              <div class="arrow">
-                <a href="arrow-up"></a>
-                <a href="arrow-down"></a>
+              <div class="arrows">
+                <a href="arrow-up" class="arrow"></a>
+                <a href="arrow-down"class="arrow down"></a>
               </div>
             </section>
-            <section class="hotel">
+            <section class="hotel clearfix">
               <div class="photo-hotel">
                 <img src="img/resert.png">
               </div>
@@ -87,7 +103,7 @@
                 </div>
                 <div class="detail-hotel">
                   <div class="type-hotel">от 3000 р.</div>
-                  <a class="details" href="booking">Забронировать</a>
+                  <a class="details booking" href="booking">Забронировать</a>
                 </div>
               </div>
               <div class="rating">
@@ -97,7 +113,7 @@
                 <div class="rating-hotel">рейтинг: 8,5</div>
               </div>
             </section>
-            <section class="hotel">
+            <section class="hotel clearfix">
               <div class="photo-hotel">
                 <img src="img/motel.png">
               </div>
@@ -111,7 +127,7 @@
                 </div>
                 <div class="detail-hotel">
                   <div class="type-hotel">от 3000 р.</div>
-                  <a class="details" href="booking">Забронировать</a>
+                  <a class="details booking" href="booking">Забронировать</a>
                 </div>
               </div>
               <div class="rating">
@@ -121,7 +137,7 @@
                 <div class="rating-hotel">рейтинг: 8,9</div>
               </div>
             </section>
-            <section class="hotel">
+            <section class="hotel clearfix">
               <div class="photo-hotel">
                 <img src="img/villa.png">
               </div>
@@ -135,7 +151,7 @@
                 </div>
                 <div class="detail-hotel">
                   <div class="type-hotel">от 4000 р.</div>
-                  <a class="details" href="booking">Забронировать</a>
+                  <a class="details" href="booking booking">Забронировать</a>
                 </div>
               </div>
               <div class="rating">
