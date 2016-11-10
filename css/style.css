@@ -97,6 +97,9 @@ body {
   font-weight: bold;
   text-align: center;
 }
+.reason-header5 {
+  width: 106px;
+}
 .reason-number {
   font-size: 14px;
   text-align: center;
@@ -267,10 +270,16 @@ body {
   vertical-align: middle;
   font-size: 0;
 }
+.human{
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-size: 0;
+}
 .quantity-label{
   display: inline-block;
   width: 75px;
-  margin-right: 40px;
+  margin-right: 39px;
   font-size: 14px;
   font-weight: bold;
   vertical-align: middle;
@@ -288,6 +297,8 @@ body {
   display: inline-block;
   width: 38px;
   height: 38px;
+  padding: 0;
+  margin: 0;
   background: url("../img/minus.png") no-repeat;
 }
 .amount{
@@ -299,7 +310,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -311,12 +322,10 @@ body {
 }
 .children{
   width: 40px;
-  margin-left: 52px;
-  margin-right: 25px;
+  margin-left: 51px;
+  margin-right: 24px;
 }
-.human{
-  margin-bottom: 0;
-}
+
 .submit {
   display: block;
   width: 458px;
@@ -374,16 +383,15 @@ body {
   float: right;
   width: 33%;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   font-size: 14px;
   vertical-align: middle;
   text-align: center;
 }
-.makers a{
+.academy a{
   width: 113px;
   height: 40px;
-  background: url("../img/htmlacademy.png") no-repeat center;
   vertical-align: middle;
   text-align: center;
 }
