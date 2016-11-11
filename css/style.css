@@ -550,11 +550,14 @@ body {
   background: url("../img/arrow_up.png") no-repeat center;
 }
 .down{
+  margin-right: 0;
   background: url("../img/arrow_down.png") no-repeat center;
 }
 .hotel{
   padding-left: 70px;
   padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 60px;
   border-bottom: 1px solid #e5e5e5;
 }
 .photo-hotel{
@@ -576,14 +579,24 @@ body {
   color:#000000;
   margin-bottom: 10px;
   text-decoration: none;
+  vertical-align: text-top;
+}
+.header-hotel a{
+  color:#000000;
+  text-decoration: none;
   vertical-align: middle;
 }
 .detail-hotel{
   display: inline-block;
   width: 110px;
+  margin-right: 5px;
   font-size: 0;
 }
+.detail-book{
+  width: 144px;
+}
 .type-hotel{
+  display: inline-block;
   width: 100px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -591,8 +604,53 @@ body {
   text-transform: uppercase;
 }
 .details{
-
+  display: inline-block;
+  width: 110px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: none;
+  background: #81b3d2;
+  color:#ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
 }
 .booking{
   width: 142px;
+  background: #766357;
+}
+.rating{
+  float: right;
+  width: 124px;
+  text-align: right;
+}
+.stars {
+  width: 89px;
+  height: 17px;
+  margin-bottom: 40px;
+  text-align: right;
+  background: url("../img/4-stars.png") no-repeat center;
+}
+.two-stars{
+  width: 42px;
+  background: url("../img/stars.png") no-repeat center;
+}
+.three-stars{
+  width: 65px;
+  background: url("../img/3-stars.png") no-repeat center;
+}
+.rating-hotel{
+  width: 110px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 14px;
+  color:#666666;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background: #f2f2f2;
 }
