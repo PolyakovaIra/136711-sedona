@@ -47,11 +47,26 @@ body {
 .link:first-child{
   text-align: left;
 }
+.information:hover {
+  color: #81b3d2;
+}
+.information:active {
+  color:#cacaca;
+}
 .link:last-child{
   text-align: right;
 }
 .link:nth-child(2){
   margin-right: 20%;
+}
+.link-hotel:link{
+  color:#766357;
+}
+.link-hotel:hover{
+  color:#604e43;
+}
+.link-hotel:active{
+  color: #dbd8d5;
 }
 .clearfix::after{
   content: '';
@@ -262,13 +277,26 @@ body {
   outline: none;
   background-color: #f2f2f2;
 }
+.input-data:hover{
+  background: #ebebeb;
+}
+.input-data:active{
+  border: 2px solid #e5e5e5;
+  background: #ffffff;
+}
 .calendar {
   position: absolute;
   top: 9px;
   right: 9px;
   width: 21px;
   height: 22px;
-  background: url("../img/calendar.png") no-repeat center;
+  background: url("../img/calendar_no-active.png") no-repeat center;
+}
+.calendar:hover{
+  background: url("../img/calendar_hvr.png") no-repeat center;
+}
+.calendar:active{
+  background: url("../img/calendar_active.png") no-repeat center;
 }
 .quantity {
   margin-bottom: 54px;
@@ -304,7 +332,13 @@ body {
   height: 38px;
   padding: 0;
   margin: 0;
-  background: url("../img/minus.png") no-repeat;
+  background: #f2f2f2 url("../img/minus_no-active.png") no-repeat center center;
+}
+.quantity-human:hover{
+  background: #f2f2f2 url("../img/minus_hvr.png") no-repeat center center;
+}
+.quantity-human:active{
+  background: #f2f2f2 url("../img/minus_active.png") no-repeat center center;
 }
 .amount{
   display: inline-block;
@@ -323,14 +357,19 @@ body {
 }
 .plus {
   display: inline-block;
-  background: url("../img/plus.png") no-repeat;
+  background: #f2f2f2 url("../img/plus_no-active.png") no-repeat center center;
+}
+.plus:hover{
+  background: #f2f2f2 url("../img/plus_hvr.png") no-repeat center center;
+}
+.plus:active{
+  background: #f2f2f2 url("../img/plus_active.png") no-repeat center center;
 }
 .children{
   width: 40px;
   margin-left: 51px;
   margin-right: 24px;
 }
-
 .submit {
   display: block;
   width: 458px;
@@ -344,6 +383,13 @@ body {
   outline: none;
   color: #ffffff;
   text-align: center;
+}
+.submit:hover{
+  background-color: #669ec0;
+}
+.submit:active{
+  background-color: #5496bd;
+  color: #94b9d2;
 }
 .map {
   height: 593px;
@@ -378,13 +424,31 @@ body {
   height: 48px;
   margin: 0 auto;
   margin-right: 6px;
-  background: #81b3d2 url("../img/tw.png") no-repeat center;
+  background: #81b3d2 url("../img/tw.png") no-repeat center center;
+}
+.social-link:hover{
+  background: #669ec0 url("../img/tw.png") no-repeat center center;
+}
+.social-link:active{
+  background: #669ec0 url("../img/tw-active.png") no-repeat center center;
 }
 .fb{
-  background: #81b3d2 url("../img/fb.png") no-repeat center;
+  background: #81b3d2 url("../img/fb.png") no-repeat center center;
+}
+.fb:hover{
+  background: #669ec0 url("../img/fb.png") no-repeat center center;
+}
+.fb:active{
+  background: #669ec0 url("../img/fb_active.png") no-repeat center center;
 }
 .yt{
-  background: #81b3d2 url("../img/yb.png") no-repeat center;
+  background: #81b3d2 url("../img/yb.png") no-repeat center center;
+}
+.yt:hover{
+  background: #669ec0 url("../img/yb.png") no-repeat center center;
+}
+.yt:active{
+  background: #669ec0 url("../img/yt_active.png") no-repeat center center;
 }
 .makers {
   float: right;
@@ -401,6 +465,12 @@ body {
   height: 40px;
   background: url("../img/htmlacademy.png") no-repeat center;
   vertical-align: middle;
+}
+.academy:hover{
+  background: url("../img/htmlacademy_hvr.png") no-repeat center;
+}
+.social-link:active{
+  background: url("../img/htmlacademy_active.png") no-repeat center;
 }
 .photo{
   background: #81523a url("../img/filter_background.jpg") no-repeat center;
@@ -494,6 +564,11 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+.button-result:hover{
+  background-color: #ffffff;
+  border: none;
+  color:#000000;
+}
 .results{
   padding-top:15px;
   padding-left:70px;
@@ -529,7 +604,24 @@ body {
 .found{
   display: inline-block;
   width: 78px;
+  text-decoration: none;
   color: #81b3d2;
+}
+.sort{
+  color:#cacaca;
+  text-decoration: underline;
+  -moz-text-decoration-color: #81b3d2;
+  -moz-text-decoration-style: dotted;
+}
+.sort:hover{
+  color:#81b3d2;
+  text-decoration: underline;
+  -moz-text-decoration-color: #81b3d2;
+  -moz-text-decoration-style: dotted;
+}
+.sort:active{
+  color:#000000;
+  text-decoration: none;
 }
 .arrows{
   float:right;
@@ -545,6 +637,12 @@ body {
   margin-right: 7px;
   vertical-align: middle;
   background: url("../img/arrow_up.png") no-repeat center;
+}
+.arrow:hover{
+  background: url("../img/arrow__up_hvr.png") no-repeat center;
+}
+.arrow:active{
+  background: url("../img/arrow_up_active.png") no-repeat center;
 }
 .down{
   margin-right: 0;
@@ -585,6 +683,12 @@ body {
   text-decoration: none;
   vertical-align: middle;
 }
+.header-hotel a:hover{
+  color:#81b3d2;
+}
+.header-hotel a:active{
+  color:#cacaca;
+}
 .info{
   width: 265px;
   font-size: 0;
@@ -621,9 +725,23 @@ body {
   text-align: center;
   vertical-align: middle;
 }
+.details:hover{
+  background: #669ec0;
+}
+.details:active{
+  background: #5496bd;
+  color:#94b9d2;
+}
 .booking{
   width: 142px;
   background: #766357;
+}
+.booking:hover{
+  background: #604e43;
+}
+.booking:active{
+  background: #503e33;
+  color:#928a85;
 }
 .rating{
   float: right;
