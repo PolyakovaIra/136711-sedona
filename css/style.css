@@ -22,6 +22,7 @@ body {
   left: 50%;
   margin-top:0px;
   margin-left: -77px;
+  cursor: pointer;
 }
 .main-menu-list{
   margin:0;
@@ -59,7 +60,7 @@ body {
 .link:nth-child(2){
   margin-right: 20%;
 }
-.link-hotel:link{
+.link .link-hotel{
   color:#766357;
 }
 .link-hotel:hover{
@@ -282,6 +283,7 @@ body {
 }
 .input-data:hover{
   background: #ebebeb;
+  border: 2px solid #ebebeb;
 }
 .input-data:focus{
   border: 2px solid #e5e5e5;
@@ -532,7 +534,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-left: 11px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border: 2px solid #ffffff;
   font-size: 0;
   border-radius: 2px;
@@ -540,7 +542,7 @@ body {
 .cost::before{
   position: absolute;
   top: 15px;
-  left:157px;
+  left:147px;
   display:block;
   content:"";
   width: 22px;
@@ -569,6 +571,42 @@ body {
   border: none;
   outline: none;
   color: #ffffff;
+  cursor: pointer;
+}
+.range-controls{
+  position: relative;
+  width: 314px;
+  margin-left: 11px;
+  margin-bottom: 32px;
+}
+.range-controls .scale{
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle{
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.range-toggle:hover{
+  background: #1c4f80;
+}
+.range-toggle-min{
+  left:0;
+}
+.range-toggle-max{
+  left: 80%;
 }
 .button-result{
   display: block;
@@ -586,6 +624,7 @@ body {
   color:#ffffff;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
 }
 .button-result:hover{
   background-color: #ffffff;
