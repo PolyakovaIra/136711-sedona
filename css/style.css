@@ -520,6 +520,16 @@ body {
   font-size: 14px;
   vertical-align: middle;
 }
+.input-filter:checked + .label-filter{
+  background: url("../img/checkbox.png") no-repeat left center;
+}
+.input-filter:not(:checked) + .label-filter{
+  background: url("../img/checkbox_empty.png") no-repeat left center;
+}
+.input-filter:disabled + .label-filter{
+  background: url("../img/checkbox_empty_disabled.png") no-repeat left center;
+}
+
 .form{
   float:right;
   text-transform: uppercase;
