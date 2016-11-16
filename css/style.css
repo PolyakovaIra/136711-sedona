@@ -512,11 +512,10 @@ body {
 }
 .input-filter{
   display: none;
-  margin-right:10px;
 }
 .label-filter{
   display:inline-block;
-  margin-left: 40px;
+  padding-left: 40px;
   font-size: 14px;
   vertical-align: middle;
 }
@@ -529,7 +528,9 @@ body {
 .input-filter:disabled + .label-filter{
   background: url("../img/checkbox_empty_disabled.png") no-repeat left center;
 }
-
+.input-filter:checked:disabled + .label-filter{
+  background: url("../img/checkbox_disabled.png") no-repeat left center;
+}
 .form{
   float:right;
   text-transform: uppercase;
