@@ -9,6 +9,11 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow:
+    5px 0 5px 0 rgba(219, 219, 219, 0.5),
+    -5px 0 5px 0 rgba(219, 219, 219, 0.5),
+    40px 0 0 0 #f2f2f2,
+    -40px 0 0 0 #f2f2f2;
 }
 .header {
   position: relative;
@@ -118,6 +123,9 @@ body {
   font-weight: bold;
   text-align: center;
 }
+.reason-header2{
+  width: 158px;
+}
 .reason-header5 {
   width: 106px;
 }
@@ -128,10 +136,16 @@ body {
   margin-bottom: 24px;
 }
 .reason-text {
-  width: 310px;
+  width: 274px;
   margin: 0 auto;
   font-size: 14px;
   text-align: center;
+}
+.reason-text1{
+  width: 290px;
+}
+.reason-text2{
+  width: 350px;
 }
 .reason-left {
   background-color: #81b3d2;
@@ -183,7 +197,7 @@ body {
   background: url("../img/house.png") no-repeat;
 }
 .burger{
-  background: url("../img/Burger.png") no-repeat;
+  background: url("../img/burger.png") no-repeat;
 }
 .present{
   background: url("../img/present.png") no-repeat;
@@ -482,16 +496,16 @@ body {
   background: url("../img/htmlacademy_active.png") no-repeat center;
 }
 .photo{
-  background: #81523a url("../img/filter_background.jpg") no-repeat center;
+  background: #81523a url("../img/introduce2.jpg") no-repeat center;
   padding-top: 20px;
-  padding-left: 70px;
-  padding-right: 60px;
+  padding-left: 75px;
+  padding-right: 75px;
   padding-bottom: 20px;
 }
 .option{
   float:left;
   width: 166px;
-  margin-right: 90px;
+  margin-right: 100px;
   text-transform: uppercase;
   line-height: 21px;
   color:#ffffff;
@@ -500,13 +514,14 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 20px;
   line-height: 21px;
   color:#ffffff;
 }
 .filter{
   display: inline-block;;
   width: 140px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 0;
   vertical-align: middle;
 }
