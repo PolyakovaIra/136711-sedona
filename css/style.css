@@ -11,9 +11,7 @@ body {
   margin: 0 auto;
   box-shadow:
     5px 0 5px 0 rgba(219, 219, 219, 0.5),
-    -5px 0 5px 0 rgba(219, 219, 219, 0.5),
-    40px 0 0 0 #f2f2f2,
-    -40px 0 0 0 #f2f2f2;
+    -5px 0 5px 0 rgba(219, 219, 219, 0.5);
 }
 .header {
   position: relative;
@@ -124,7 +122,7 @@ body {
   text-align: center;
 }
 .reason-header2{
-  width: 158px;
+  width: 151px;
 }
 .reason-header5 {
   width: 106px;
@@ -283,29 +281,28 @@ body {
   display: inline-block;
   box-sizing: border-box;
   width: 342px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 40px;
   font-size: 14px;
   font-weight: bold;
-  line-height: 26px;
   border: none;
   outline: none;
   background-color: #f2f2f2;
-  border: 2px solid #f2f2f2;
+  box-shadow: inset 2px 2px 0 0 #f2f2f2,  inset -2px -2px 0 0 #f2f2f2;
 }
 .input-data:hover{
   background: #ebebeb;
-  border: 2px solid #ebebeb;
+  box-shadow: inset 2px 2px 0 0 #ebebeb, inset -2px -2px 0 0 #ebebeb;
 }
 .input-data:focus{
-  border: 2px solid #e5e5e5;
+  box-shadow: inset 2px 2px 0 0 #e5e5e5, inset -2px -2px 0 0 #e5e5e5;
   background: #ffffff;
 }
 .calendar {
   position: absolute;
-  top: 10px;
+  top: 6px;
   right: 12px;
   width: 21px;
   height: 22px;
@@ -374,6 +371,15 @@ body {
   border: none;
   outline: none;
   background-color: #f2f2f2;
+  box-shadow: inset 2px 2px 0 0 #f2f2f2, inset -2px -2px 0 0 #f2f2f2;
+}
+.amount:hover{
+  background: #ebebeb;
+  box-shadow: inset 2px 2px 0 0 #ebebeb, inset -2px -2px 0 0 #ebebeb;
+}
+.amount:focus{
+  box-shadow: inset 2px 2px 0 0 #e5e5e5, inset -2px -2px 0 0 #e5e5e5;
+  background: #ffffff;
 }
 .plus {
   display: inline-block;
@@ -420,6 +426,7 @@ body {
   padding-top: 36px;
   padding-bottom: 36px;
   vertical-align: middle;
+  font-size: 0;
 }
 .tag {
   display: inline-block;
@@ -474,8 +481,9 @@ body {
   background: #669ec0 url("../img/yt_active.png") no-repeat center;
 }
 .makers {
-  float: right;
+  display: inline-block;
   width: 33%;
+  padding-top: 4px;
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
@@ -718,10 +726,11 @@ body {
   vertical-align: middle;
 }
 .arrow{
-  display: inline-block;
+  float:left;
   width: 11px;
   height: 10px;
   margin-right: 7px;
+  margin-left: 10px;
   vertical-align: middle;
   background: url("../img/arrow_up.png") no-repeat center;
 }
@@ -732,13 +741,18 @@ body {
   background: url("../img/arrow_up_active.png") no-repeat center;
 }
 .down{
-  margin-right: 0;
+  float:right;
+  margin: 0;
   background: url("../img/arrow_down.png") no-repeat center;
 }
 .down:hover{
+  float:right;
+  margin: 0;
   background: url("../img/arrow_down.png") no-repeat center;
 }
 .down:active{
+  float:right;
+  margin: 0;
   background: url("../img/arrow_down.png") no-repeat center;
 }
 .hotel{
