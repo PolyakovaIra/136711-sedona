@@ -247,6 +247,7 @@ body {
   margin: 0 auto;
 }
 .button{
+  display: none;
   position: absolute;
   left: 50%;
   width: 568px;
@@ -254,6 +255,16 @@ body {
   padding: 55px;
   box-sizing: border-box;
   background-color: #ffffff;
+}
+.button-show{
+  display: block;
+  animation: bounce 0.6s;
+}
+.button-bounce {     
+  0%   { transform: translateX(-2000px);}
+  70%  { transform: translateX();(30px);}
+  90%  { transform: translateX();(-10px);}
+  100% { transform: translateX(0);}
 }
 .form-label {
   display:inline-block;
