@@ -85,21 +85,21 @@
         <section class="selection-data">
           <h2 class="selection-header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="selection-text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          <a class="data-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <a class="data-button" href="hotels.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
         <div class="button">
           <form method="get" class="search">
             <div class="form-label">
               <label for="form-data" class="label">ДАТА ЗАЕЗДА:</label>
               <div class="data-calendar">
-                <input id="form-data" type="text" value="24 апреля 2016" class="input-data">
+                <input id="form-data" type="text" class="input-data" required>
                 <div class="calendar"></div>
               </div>
             </div>
             <div class="form-label">
               <label for="form-data2" class="label">ДАТА ВЫЕЗДА:</label>
               <div class="data-calendar">
-                <input  id="form-data2" type="text" value="4 июля 2016" class="input-data">
+                <input  id="form-data2" type="text" class="input-data" required>
                 <div class="calendar"></div>
               </div>
             </div>
@@ -108,7 +108,7 @@
                 <label for="human" class="quantity-label"> ВЗРОСЛЫЕ:</label>
                 <div class="amt">
                   <span class="quantity-human"></span>
-                  <input id="human" type="text" class="amount" value="2">
+                  <input id="human" type="text" class="amount">
                   <span class="quantity-human plus"></span>
                 </div>
               </div>
@@ -116,7 +116,7 @@
                 <label for="children" class="quantity-label children"> ДЕТИ:</label>
                 <div class="amt">
                   <span class="quantity-human"></span>
-                  <input id="children" type="text" class="amount" value="0">
+                  <input id="children" type="text" class="amount">
                   <span class="quantity-human plus"></span>
                 </div>
               </div>
