@@ -1,24 +1,23 @@
 var link = document.querySelector(".data-button");
 var button = document.querySelector(".button");
-var form = button.querySelector("input-data");
-var data = button.querySelector("[id=form-data]");
-var data2 = button.querySelector("[id=form-data2]");
-var human = button.querySelector("[id=human]");
-var children = button.querySelector("[id=children]");
-var storage = localStorage.getItem("data");
-var storage = localStorage.getItem("data2");
-var storage = localStorage.getItem("human");
+var form = button.querySelector(".search");
+var arrivalDate = button.querySelector("[id=arrivalDate]");
+var departureDate = button.querySelector("[id=departureDate]");
+var adultNumber = button.querySelector("[id=adultNumber]");
+var childrenNumber = button.querySelector("[id=childrenNumber]");
+var storage = localStorage.getItem("arrivalDate");
+
 
 link.addEventListener("click",function(event) {
   event.preventDefault();
   button.classList.add("button-show");
-  data.focus();
+  arrivalDate.focus();
 
-  if (storge){
-    data.value = storage;
-    data2.focus();
+  if (storage){
+    arrivalDate.value = storage;
+    departureDate.focus();
   } else {
-    data.focus();
+    arrivalDate.focus();
   }
 });
 
@@ -29,21 +28,25 @@ window.addEventListener("keydown",function(event) {
     }
   }
 });
-submit.addEventListener("submit", function(event) {
-  if (!data.value || !data2.value) {
+form.addEventListener("submit", function(event) {
+  if (!arrivalDate.value || !departureDate.value || !adultNumber.value || !childrenNumber.value) {
   event.preventDefault();
   button.classList.add("button-error");
   console.log("Введите даты заезда и выезда");
 } else {
-  localStorage.setItem("data", data.value);
-  localStorage.setItem("data2", data2.value);
+  localStorage.setItem("arrivalDate", arrivalDate.value);
+  localStorage.setItem("departureDate", departureDate.value);
+  localStorage.setItem("adultNumber", adultNumber.value);
+  localStorage.setItem("childrenNumber", childrenNumber.value);
 }
 });
-submit.addEventListener("submit", function(event) {
-  if (!human.value) {
-  event.preventDefault();
-  console.log("Введите количество людей");
-}else {
-  localStorage.setItem("human", human.value);
+
+function initialize () {
+  var mapOptions = {
+    center: new
+    gooogle.maps.LatLng(34.8694705,-111.763207)
+  }
+  var map = new
+  google.maps.Map(document.getElementById("map-canvas"),
+  mapOptions);
 }
-});
