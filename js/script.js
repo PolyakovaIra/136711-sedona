@@ -41,12 +41,16 @@ form.addEventListener("submit", function(event) {
 }
 });
 
-function initialize () {
-  var mapOptions = {
-    center: new
-    gooogle.maps.LatLng(34.8694705,-111.763207)
-  }
-  var map = new
-  google.maps.Map(document.getElementById("map-canvas"),
-  mapOptions);
+function initMap() {
+ var sedona = {lat: 34.869867, lng: -111.760978};
+ var map = new google.maps.Map(document.getElementById('map-canvas'), {
+   center: sedona,
+   scrollwheel: false,
+   zoom: 9,
+   disableDefaultUI: true
+ });
+ var marker = new google.maps.Marker({
+   position: sedona,
+   map: map
+ });
 }
