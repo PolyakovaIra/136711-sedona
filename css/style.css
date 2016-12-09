@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   box-shadow:
@@ -18,7 +19,7 @@ body {
   padding-left: 6%;
   padding-right: 6%;
 }
-.logo {
+.headerLogo {
   display: inline-block;
   width: 138px;
   position: absolute;
@@ -27,12 +28,12 @@ body {
   margin-left: -77px;
   cursor: pointer;
 }
-.main-menu-list{
+.headerMainMenuList{
   margin:0;
   padding:0;
   font-size: 0;
 }
-.link {
+.headerMainMenuLink {
   display: inline-block;
   width: 20%;
   list-style-type: none;
@@ -44,11 +45,11 @@ body {
   text-transform: uppercase;
   text-align: center;
 }
-.link a{
+.headerMainMenuLink a{
   text-decoration: none;
   color: #000000;
 }
-.link:first-child{
+.headerMainMenuLink:first-child{
   text-align: left;
 }
 .information:hover {
@@ -57,13 +58,13 @@ body {
 .information:active {
   color:#cacaca;
 }
-.link:last-child{
+.headerMainMenuLink:last-child{
   text-align: right;
 }
-.link:nth-child(2){
+.headerMainMenuLink:nth-child(2){
   margin-right: 20%;
 }
-.link .link-hotel{
+.headerMainMenuLink .link-hotel{
   color:#766357;
 }
 .link-hotel:hover{
@@ -77,17 +78,17 @@ body {
   display: table;
   clear:both;
 }
-.photo-preview {
+.photoPreview {
   height: 510px;
   background: #869eb2 url("../img/introduce1.jpg") no-repeat 0 -56px;
 }
-.main-preview {
+.mainPreview {
   padding-top: 58px;
   padding-bottom: 55px;
   line-height: 26px;
   color: #333333;
 }
-.main-preveiw-header {
+.mainPreveiwHeader {
   width: 460px;
   margin:0 auto;
   margin-bottom: 35px;
@@ -95,7 +96,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.main-preveiw-text {
+.mainPreveiwText {
   font-size: 14px;
   font-weight: regular;
   text-align: center;
@@ -242,21 +243,22 @@ body {
   text-decoration: none;
   text-align: center;
 }
-.data-button{
+.linkSelectionDate{
   width: 568px;
   margin: 0 auto;
 }
-.button{
+.selectionForm{
   display: none;
   position: absolute;
   left: 50%;
   width: 568px;
+  z-index: 1;
   margin-left: -284px;
   padding: 55px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
-.button-show{
+.selectionFormShow{
   display: block;
   animation: bounce 0.6s;
 }
@@ -271,17 +273,17 @@ body {
   10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
   20%, 40%, 60%, 80%      { transform: translateX(10px);}
 }
-.button-error {
+.selectionFormError {
   animation: shake 0.6s;
 }
-.form-label {
+.formLabel {
   display:inline-block;
   width: 458px;
   margin-bottom: 30px;
   vertical-align: middle;
   font-size: 0;
 }
-.label{
+.labelDate{
   display:inline-block;
   vertical-align: middle;
   width: 98px;
@@ -289,14 +291,14 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
-.data-calendar{
+.searchFormCalendar{
   position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 346px;
 
 }
-.input-data{
+.inputDate{
   display: inline-block;
   box-sizing: border-box;
   width: 342px;
@@ -311,11 +313,11 @@ body {
   background-color: #f2f2f2;
   box-shadow: inset 2px 2px 0 0 #f2f2f2,  inset -2px -2px 0 0 #f2f2f2;
 }
-.input-data:hover{
+.inputDate:hover{
   background: #ebebeb;
   box-shadow: inset 2px 2px 0 0 #ebebeb, inset -2px -2px 0 0 #ebebeb;
 }
-.input-data:focus{
+.inputDate:focus{
   box-shadow: inset 2px 2px 0 0 #e5e5e5, inset -2px -2px 0 0 #e5e5e5;
   background: #ffffff;
 }
@@ -340,13 +342,13 @@ body {
   vertical-align: middle;
   font-size: 0;
 }
-.human{
+.quantityPerson{
   display: inline-block;
   margin-bottom: 0;
   vertical-align: middle;
   font-size: 0;
 }
-.quantity-label{
+.adultNumberLabel{
   display: inline-block;
   width: 75px;
   margin-right: 38px;
@@ -354,7 +356,7 @@ body {
   font-weight: bold;
   vertical-align: middle;
 }
-.amt{
+.quantityPersonNumber{
   display: inline-block;
   width: 114px;
   height: 38px;
@@ -363,7 +365,7 @@ body {
   vertical-align: middle;
   font-size: 0;
 }
-.quantity-human{
+.personNumber{
   display: inline-block;
   width: 38px;
   height: 38px;
@@ -372,13 +374,13 @@ body {
   cursor:pointer;
   background: #f2f2f2 url("../img/minus_no-active.png") no-repeat center center;
 }
-.quantity-human:hover{
+.personNumber:hover{
   background: #f2f2f2 url("../img/minus_hvr.png") no-repeat center center;
 }
-.quantity-human:active{
+.personNumber:active{
   background: #f2f2f2 url("../img/minus_active.png") no-repeat center center;
 }
-.amount{
+.number{
   display: inline-block;
   width: 38px;
   height: 38px;
@@ -394,22 +396,22 @@ body {
   background-color: #f2f2f2;
   box-shadow: inset 2px 2px 0 0 #f2f2f2, inset -2px -2px 0 0 #f2f2f2;
 }
-.amount:hover{
+.number:hover{
   background: #ebebeb;
   box-shadow: inset 2px 2px 0 0 #ebebeb, inset -2px -2px 0 0 #ebebeb;
 }
-.amount:focus{
+.numbert:focus{
   box-shadow: inset 2px 2px 0 0 #e5e5e5, inset -2px -2px 0 0 #e5e5e5;
   background: #ffffff;
 }
-.plus {
+.personNumberPlus {
   display: inline-block;
   background: #f2f2f2 url("../img/plus_no-active.png") no-repeat center center;
 }
-.plus:hover{
+.personNumberPlus:hover{
   background: #f2f2f2 url("../img/plus_hvr.png") no-repeat center center;
 }
-.plus:active{
+.personNumberPlus:active{
   background: #f2f2f2 url("../img/plus_active.png") no-repeat center center;
 }
 .children{
@@ -422,7 +424,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin:0;
 }
-.submit {
+.searchFormSubmit {
   display: block;
   width: 458px;
   margin: 0 auto;
@@ -437,10 +439,10 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   cursor: pointer;
 }
-.submit:hover{
+.searchFormSubmit:hover{
   background-color: #669ec0;
 }
-.submit:active{
+.searchFormSubmit:active{
   background-color: #5496bd;
   color: #94b9d2;
 }
@@ -448,31 +450,37 @@ input[type=number]::-webkit-outer-spin-button {
   height: 593px;
 }
 .footer {
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
   margin-top: 0px;
   padding-top: 36px;
   padding-bottom: 36px;
   vertical-align: middle;
   font-size: 0;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.85);
 }
-.tag {
+.footerHotel{
+  position: relative;
+}
+.footerTag {
   display: inline-block;
-  width: 33%;
+  width: 400px;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
 }
-.social {
+.footerSocial {
   display: inline-block;
-  width: 33%;
+  width: 400px;
   margin: 0 auto;
   font-size: 0;
   line-height: normal;
   text-align: center;
   vertical-align: middle;
 }
-.social-link {
+.footerSocialLink {
   display: inline-block;
   width: 46px;
   height: 48px;
@@ -480,10 +488,10 @@ input[type=number]::-webkit-outer-spin-button {
   margin-right: 6px;
   background: #81b3d2 url("../img/tw.png") no-repeat center;
 }
-.social-link:hover{
+.footerSocialLink:hover{
   background: #669ec0 url("../img/tw.png") no-repeat center;
 }
-.social-link:active{
+.footerSocialLink:active{
   background: #669ec0 url("../img/tw-active.png") no-repeat center;
 }
 .fb{
@@ -504,26 +512,26 @@ input[type=number]::-webkit-outer-spin-button {
 .yt:active{
   background: #669ec0 url("../img/yt_active.png") no-repeat center;
 }
-.makers {
+.footerMakers {
   display: inline-block;
-  width: 33%;
+  width: 400px;
   margin: 0 auto;
   font-size: 14px;
   text-transform: uppercase;
   vertical-align: middle;
   text-align: center;
 }
-.academy {
+.footerMakersAcademy {
   display: inline-block;
   width: 113px;
   height: 40px;
   background: url("../img/htmlacademy.png") no-repeat center;
   vertical-align: middle;
 }
-.academy:hover{
+.footerMakersAcademy:hover{
   background: url("../img/htmlacademy_hvr.png") no-repeat center;
 }
-.academy:active{
+.footerMakersAcademy:active{
   background: url("../img/htmlacademy_active.png") no-repeat center;
 }
 .photo{
@@ -785,6 +793,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding-right: 60px;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .photo-hotel{
   float:left;
   display: block;

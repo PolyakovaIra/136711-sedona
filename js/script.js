@@ -1,16 +1,16 @@
-var link = document.querySelector(".data-button");
-var button = document.querySelector(".button");
-var form = button.querySelector(".search");
-var arrivalDate = button.querySelector("[id=arrivalDate]");
-var departureDate = button.querySelector("[id=departureDate]");
-var adultNumber = button.querySelector("[id=adultNumber]");
-var childrenNumber = button.querySelector("[id=childrenNumber]");
+var link = document.querySelector(".linkSelectionDate");
+var selectionForm = document.querySelector(".selectionForm");
+var form =  selectionForm.querySelector(".searchForm");
+var arrivalDate =  selectionForm.querySelector("[id=arrivalDate]");
+var departureDate =  selectionForm.querySelector("[id=departureDate]");
+var adultNumber =  selectionForm.querySelector("[id=adultNumber]");
+var childrenNumber =  selectionForm.querySelector("[id=childrenNumber]");
 var storage = localStorage.getItem("arrivalDate");
 
 
 link.addEventListener("click",function(event) {
   event.preventDefault();
-  button.classList.add("button-show");
+  selectionForm.classList.add("selectionFormShow");
   arrivalDate.focus();
 
   if (storage){
@@ -23,15 +23,15 @@ link.addEventListener("click",function(event) {
 
 window.addEventListener("keydown",function(event) {
   if (event.keyCode === 27) {
-    if (button.classList.contains("button-show")) {
-      button.classList.remove("button-show");
+    if (selectionForm.classList.contains("selectionFormShow")) {
+      selectionForm.classList.remove("selectionFormShow");
     }
   }
 });
 form.addEventListener("submit", function(event) {
   if (!arrivalDate.value || !departureDate.value || !adultNumber.value || !childrenNumber.value) {
   event.preventDefault();
-  button.classList.add("button-error");
+  selectionForm.classList.add("selectionFormError");
   console.log("Введите даты заезда и выезда");
 } else {
   localStorage.setItem("arrivalDate", arrivalDate.value);
