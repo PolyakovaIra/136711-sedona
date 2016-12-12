@@ -11,24 +11,24 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="headerLogo">
-          <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <div class="logo">
+          <img src="img/logo.png" alt="logo">
         </div>
-        <div class="headerMainMenu">
-          <ul class="headerMainMenuList clearfix">
-            <li class="headerMainMenuLink"><a href="#info" class="information">Информация</a></li>
-            <li class="headerMainMenuLink"><a href="#photo"class="information">Фото и видео</a></li>
-            <li class="headerMainMenuLink"><a href="#map"class="information">Карта штата</a></li>
-            <li class="headerMainMenuLink"><a href="hotels.html" class="link-hotel">Гостиницы</a></li>
+        <div class="main-menu">
+          <ul class="main-menu-list clearfix">
+            <li class="link"><a href="#info"class="information">Информация</a></li>
+            <li class="link"><a href="#photo" class="information">Фото и видео</a></li>
+            <li class="link"><a href="#map" class="information">Карта штата</a></li>
+            <li class="link"><a href="hotels.html" class="information">Гостиницы</a></li>
           </ul>
         </div>
       </header>
       <main>
-        <div class="photoPreview">
+        <div class="photo-preview">
         </div>
-        <div class="mainPreview">
-          <h2 class="mainPreveiwHeader">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-          <p class="mainPreveiwText">РАСМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ КАНЬОН!</p>
+        <div class="main-preview">
+          <h2 class="main-preveiw-header">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+          <p class="main-preveiw-text">РАСМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ КАНЬОН!</p>
         </div>
         <section class="moments clearfix">
           <div class="reason reason-left">
@@ -85,56 +85,56 @@
         <section class="selection-data">
           <h2 class="selection-header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="selection-text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          <a class="linkSelectionDate" href="hotels.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <a class="data-button" href="hotels.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
-        <div class="selectionForm">
-          <form method="get" class="searchForm">
-            <div class="formLabel">
-              <label for="arrivalDate" class="labelDate">ДАТА ЗАЕЗДА:</label>
-              <div class="searchFormCalendar">
-                <input id="arrivalDate" type="text" class="inputDate" value="24 апреля 2016" required>
+        <div class="button">
+          <form method="get" class="search">
+            <div class="form-label">
+              <label for="arrivalDate" class="label">ДАТА ЗАЕЗДА:</label>
+              <div class="data-calendar">
+                <input id="arrivalDate" type="text" class="input-data" value="24 апреля 2016" required>
                 <div class="calendar"></div>
               </div>
             </div>
-            <div class="formLabel">
-              <label for="departureDate" class="labelDate">ДАТА ВЫЕЗДА:</label>
-              <div class="searchFormCalendar">
-                <input  id="departureDate" type="text" class="inputDate" value="4 июля 2016" required>
+            <div class="form-label">
+              <label for="departureDate" class="label">ДАТА ВЫЕЗДА:</label>
+              <div class="data-calendar">
+                <input  id="departureDate" type="text" class="input-data" value="4 июля 2016" required>
                 <div class="calendar"></div>
               </div>
             </div>
             <div class="quantity">
-              <div class="quantityPerson">
-                <label for="adultNumber" class="adultNumberLabel"> ВЗРОСЛЫЕ:</label>
-                <div class="quantityPersonNumber">
-                  <span class="personNumber"></span>
-                  <input id="adultNumber" type="number" step="1" min="1" max="6" class="number" value="2" required>
-                  <span class="personNumber personNumberPlus"></span>
+              <div class="human">
+                <label for="adultNumber" class="quantity-label"> ВЗРОСЛЫЕ:</label>
+                <div class="amt">
+                  <span class="quantity-human"></span>
+                  <input id="adultNumber" type="number" step="1" min="1" max="6" class="amount" value="2" required>
+                  <span class="quantity-human plus"></span>
                 </div>
               </div>
-              <div class="quantityPerson">
-                <label for="childrenNumber" class="adultNumberLabel children"> ДЕТИ:</label>
-                <div class="quantityPersonNumber">
-                  <span class="personNumber"></span>
-                  <input id="childrenNumber" type="number" step="1" min="0" max="6" class="number" value="0" required>
-                  <span class="personNumber personNumberPlus"></span>
+              <div class="human">
+                <label for="childrenNumber" class="quantity-label children"> ДЕТИ:</label>
+                <div class="amt">
+                  <span class="quantity-human"></span>
+                  <input id="childrenNumber" type="number" step="1" min="0" max="6" class="amount" value="0" required>
+                  <span class="quantity-human plus"></span>
                 </div>
               </div>
             </div>
-            <input type="submit" value="НАЙТИ" class="searchFormSubmit">
+            <input type="submit" value="НАЙТИ" class="submit">
           </form>
         </div>
         <section class="map" id="map-canvas"></section>
       </main>
       <footer class="footer clearfix">
-        <div class="footerTag">#VISITSEDONA</div>
-        <div class="footerSocial">
-          <a class="footerSocialLink tw" href="http://twitter.com"></a>
-          <a class="footerSocialLink fb" href="http://www.facebook.com"></a>
-          <a class="footerSocialLink yt" href="http://youtube.com"></a>
+        <div class="tag">#VISITSEDONA</div>
+        <div class="social">
+          <a class="social-link tw" href="http://twitter.com"></a>
+          <a class="social-link fb" href="http://www.facebook.com"></a>
+          <a class="social-link yt" href="http://youtube.com"></a>
         </div>
-        <div class="footerMakers">website by
-          <a href="http://up.htmlacademy.ru" class="footerMakersAcademy"></a>
+        <div class="makers">website by
+          <a href="http://up.htmlacademy.ru" class="academy"></a>
         </div>
       </footer>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYxss_QatALtPLxBG8fXWVKuhrwgBHSmI&callback=initMap" async defer></script>
