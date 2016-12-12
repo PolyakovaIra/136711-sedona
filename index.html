@@ -33,7 +33,7 @@
         <section class="moments clearfix">
           <div class="reason reason-left">
             <h2 class="reason-header">НАСТОЯЩИЙ ГОРОДОК</h2>
-            <p class="reason-number">- №1 -</p>
+            <p class="reason-number">&#8212; №1 &#8212;</p>
             <p class="reason-text reason-text1">СЕДОНА - НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <div class="view photo1">
@@ -59,7 +59,7 @@
         <section class="moments clearfix">
           <div class="reason reason-right">
             <h2 class="reason-header reason-header2">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h2>
-            <p class="reason-number">- №2 -</p>
+            <p class="reason-number">&#8212; №2 &#8212;</p>
             <p class="reason-text reason-text2">ДА, ПО НЕМУ ВЫ МОЖЕТЕ ПРОЙТИ! ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ</p>
           </div>
           <div class="view photo2">
@@ -68,60 +68,60 @@
         <section class="reasons clearfix">
           <div class="reason">
             <h2 class="reason-header">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
-            <p class="reason-number">-№3-</p>
+            <p class="reason-number">&#8212; №3 &#8212;</p>
             <p class="reason-text">ВСЕ ДОСТОРПИМЕЧАТЕЛЬНОСТИ НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </div>
           <div class="reason">
             <h2 class="reason-header">КРАСИВАЯ ДОРОГА</h2>
-            <p class="reason-number">-№4-</p>
+            <p class="reason-number">&#8212; №4 &#8212;</p>
             <p class="reason-text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
           </div>
           <div class="reason">
             <h2 class="reason-header reason-header5">МАЛО ТУРИСТОВ</h2>
-            <p class="reason-number">-№5-</p>
+            <p class="reason-number">&#8212; №5 &#8212;</p>
             <p class="reason-text">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН И ТОЛПИТСЯ ТАМ</p>
           </div>
         </section>
         <section class="selection-data">
           <h2 class="selection-header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
           <p class="selection-text">УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          <a class="data-button" href="hotels.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+          <a class="link-selection-date" href="hotels.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
-        <div class="button">
-          <form method="get" class="search">
+        <div class="selection-form">
+          <form method="get" class="search-form">
             <div class="form-label">
-              <label for="arrivalDate" class="label">ДАТА ЗАЕЗДА:</label>
-              <div class="data-calendar">
-                <input id="arrivalDate" type="text" class="input-data" value="24 апреля 2016" required>
+              <label for="arrivalDate" class="label-date">ДАТА ЗАЕЗДА:</label>
+              <div class="search-form-calendar">
+                <input id="arrival-date" type="text" class="input-date" value="24 апреля 2016" required>
                 <div class="calendar"></div>
               </div>
             </div>
             <div class="form-label">
-              <label for="departureDate" class="label">ДАТА ВЫЕЗДА:</label>
-              <div class="data-calendar">
-                <input  id="departureDate" type="text" class="input-data" value="4 июля 2016" required>
+              <label for="departure-date" class="label-date">ДАТА ВЫЕЗДА:</label>
+              <div class="search-form-calendar">
+                <input  id="departure-date" type="text" class="input-date" value="4 июля 2016" required>
                 <div class="calendar"></div>
               </div>
             </div>
             <div class="quantity">
-              <div class="human">
-                <label for="adultNumber" class="quantity-label"> ВЗРОСЛЫЕ:</label>
-                <div class="amt">
-                  <span class="quantity-human"></span>
-                  <input id="adultNumber" type="number" step="1" min="1" max="6" class="amount" value="2" required>
-                  <span class="quantity-human plus"></span>
+              <div class="quantity-person">
+                <label for="adult-number" class="adult-number-label"> ВЗРОСЛЫЕ:</label>
+                <div class="quantity-person-number">
+                  <span class="person-number"></span>
+                  <input id="adult-number" type="number" step="1" min="1" max="6" class="number" value="2" required>
+                  <span class="person-number person-number-plus"></span>
                 </div>
               </div>
-              <div class="human">
-                <label for="childrenNumber" class="quantity-label children"> ДЕТИ:</label>
-                <div class="amt">
-                  <span class="quantity-human"></span>
-                  <input id="childrenNumber" type="number" step="1" min="0" max="6" class="amount" value="0" required>
-                  <span class="quantity-human plus"></span>
+              <div class="quantity-person">
+                <label for="children-number" class="adult-number-label children"> ДЕТИ:</label>
+                <div class="quantity-person-number">
+                  <span class="person-number"></span>
+                  <input id="children-number" type="number" step="1" min="0" max="6" class="number" value="0" required>
+                  <span class="person-number personNumberPlus"></span>
                 </div>
               </div>
             </div>
-            <input type="submit" value="НАЙТИ" class="submit">
+            <input type="submit" value="НАЙТИ" class="search-form-submit">
           </form>
         </div>
         <section class="map" id="map-canvas"></section>
