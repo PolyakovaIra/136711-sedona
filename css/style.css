@@ -7,6 +7,7 @@ body {
   margin: 0;
 }
 .container {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   box-shadow:
@@ -107,7 +108,7 @@ body {
   background-color: #eeeeee;
 }
 .reason {
-  float:left;
+  float: left;
   padding-top: 52px;
   padding-bottom: 52px;
   width: 400px;
@@ -121,10 +122,10 @@ body {
   font-weight: bold;
   text-align: center;
 }
-.reason-header2 {
+.reason-header-two {
   width: 151px;
 }
-.reason-header5 {
+.reason-header-five {
   width: 106px;
 }
 .reason-number {
@@ -139,10 +140,10 @@ body {
   font-size: 14px;
   text-align: center;
 }
-.reason-text1 {
+.reason-text-one {
   width: 290px;
 }
-.reason-text2 {
+.reason-text-two {
   width: 350px;
 }
 .reason-left {
@@ -161,7 +162,7 @@ body {
   margin-left: 0px;
   background: #9e785c url("../img/photo1.jpg") no-repeat center;
 }
-.photo2 {
+.view-photo {
   float:left;
   width: 800px;
   height: 256px;
@@ -219,7 +220,7 @@ body {
   font-weight: bold;
   line-height: 24px;
 }
-.selection-text{
+.selection-text {
   width: 446px;
   margin: 0 auto;
   margin-bottom: 48px;
@@ -346,7 +347,7 @@ body {
 .calendar:hover {
   background: url("../img/calendar_hvr.png") no-repeat center;
 }
-.calendar:active{
+.calendar:active {
   background: url("../img/calendar_active.png") no-repeat center;
 }
 .quantity {
@@ -364,7 +365,7 @@ body {
 .adult-number-label {
   display: inline-block;
   width: 75px;
-  margin-right: 38px;
+  margin-right: 36px;
   font-size: 14px;
   font-weight: bold;
   vertical-align: middle;
@@ -430,7 +431,7 @@ body {
 }
 .children {
   width: 40px;
-  margin-left: 51px;
+  margin-left: 50px;
   margin-right: 24px;
 }
 input[type=number]::-webkit-inner-spin-button,
@@ -464,13 +465,18 @@ input[type=number]::-webkit-outer-spin-button {
   height: 593px;
 }
 .footer {
+  position: absolute;
+  bottom: 0;
   margin-top: 0px;
   padding-top: 36px;
   padding-bottom: 36px;
   vertical-align: middle;
   font-size: 0;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.footer-hotels {
+  position: relative;
 }
 .tag {
   display: inline-block;
@@ -678,7 +684,7 @@ input[type=number]::-webkit-outer-spin-button {
   background: #1c4f80;
 }
 .range-toggle-min {
-  left:0;
+  left: 0;
 }
 .range-toggle-max {
   left: 80%;
@@ -696,14 +702,14 @@ input[type=number]::-webkit-outer-spin-button {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
-  color:#ffffff;
+  color: #ffffff;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
 }
 .button-result:hover {
   background-color: #ffffff;
-  color:#000000;
+  color: #000000;
 }
 .results {
   padding-top: 15px;
@@ -879,7 +885,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .details:active {
   background: #5496bd;
-  color:#94b9d2;
+  color: #94b9d2;
 }
 .booking {
   width: 142px;
@@ -890,7 +896,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .booking:active {
   background: #503e33;
-  color:#928a85;
+  color: #928a85;
 }
 .rating {
   float: right;
