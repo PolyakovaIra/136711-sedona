@@ -16,8 +16,8 @@
         <div class="main-menu">
           <ul class="main-menu-list clearfix">
             <li class="link"><a href="#info" class="information">Информация</a></li>
-            <li class="link"><a href="#photo"class="information">Фото и видео</a></li>
-            <li class="link"><a href="#map"class="information">Карта штата</a></li>
+            <li class="link"><a href="#photo" class="information">Фото и видео</a></li>
+            <li class="link"><a href="#map" class="information">Карта штата</a></li>
             <li class="link"><a href="hotels.html" class="link-hotel">Гостиницы</a></li>
           </ul>
         </div>
@@ -55,125 +55,126 @@
                 <label for="apartments" class="label-filter">Апартаменты</label>
               </div>
             </div>
-            <div class="form">
-              <h1 class="option-head">стоимость в сутки(Р):</h1>
-              <div class="cost">
-                <div class="value">
-                  <label for="cost-value" class="label-value">от</label>
-                  <input id="cost-value" type="text" value="0" class="input-value">
-                </div>
-                <div class="value">
-                  <label for="cost-value" class="label-value">до</label>
-                  <input id="cost-value" type="text" value="3000" class="input-value">
-                </div>
+          </form>
+          <div class="form">
+            <h1 class="option-head">стоимость в сутки(Р):</h1>
+            <div class="cost">
+              <div class="value">
+                <label for="cost-value" class="label-value">от</label>
+                <input id="cost-value" type="text" value="0" class="input-value">
               </div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+              <div class="value">
+                <label for="cost-value-max" class="label-value">до</label>
+                <input id="cost-value-max" type="text" value="3000" class="input-value">
               </div>
-              <input class="button-result" type="submit" value="показать">
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <input class="button-result" type="submit" value="показать">
+          </div>
+        </div>
+        <section class="results clearfix">
+          <p class="result-head">найдено:3</p>
+          <div class="sorting">
+            <p class="sorting-head">сортировка:</p>
+            <a class="found" href="cost"> по цене </a>
+            <a class="found sort sort-type" href="type">  по типу</a>
+            <a class="found sort" href="range"> по рейтингу</a>
+          </div>
+          <div class="arrows">
+            <a href="arrow-up" class="arrow"></a>
+            <a href="arrow-down" class="arrow down"></a>
+          </div>
+        </section>
+        <section class="hotel clearfix">
+          <div class="photo-hotel">
+            <img src="img/resert.png" alt="resert" width="135" height="90">
+          </div>
+          <div class="info-hotel">
+            <div class="header-hotel">
+              <a href="header-hotel">amara resort & spa</a>
+            </div>
+            <div class="info">
+              <div class="detail-hotel">
+                <div class="type-hotel">гостиница</div>
+                <a class="details" href="details">подробнее</a>
+              </div>
+              <div class="detail-hotel detail-book">
+                <div class="type-hotel">от 3500 р.</div>
+                <a class="details booking" href="booking">Забронировать</a>
+              </div>
             </div>
           </div>
-          <section class="results clearfix">
-              <p class="result-head">найдено:3</p>
-              <div class="sorting">
-                <p class="sorting-head">сортировка:</p>
-                <a class="found" href="cost"> по цене </a>
-                <a class="found sort sort-type" href="type">  по типу</a>
-                <a class="found sort" href="range"> по рейтингу</a>
-              </div>
-              <div class="arrows">
-                <a href="arrow-up" class="arrow"></a>
-                <a href="arrow-down"class="arrow down"></a>
-              </div>
-            </section>
-            <section class="hotel clearfix">
-              <div class="photo-hotel">
-                <img src="img/resert.png">
-              </div>
-              <div class="info-hotel">
-                <div class="header-hotel">
-                  <a href="header-hotel">amara resort & spa</a>
-                </div>
-                <div class="info">
-                  <div class="detail-hotel">
-                    <div class="type-hotel">гостиница</div>
-                    <a class="details" href="details">подробнее</a>
-                  </div>
-                  <div class="detail-hotel detail-book">
-                    <div class="type-hotel">от 3500 р.</div>
-                    <a class="details booking" href="booking">Забронировать</a>
-                  </div>
-                </div>
-              </div>
-              <div class="rating clearfix">
-                <div class="stars"></div>
-                <div class="rating-hotel">рейтинг: 8,5</div>
-              </div>
-            </section>
-            <section class="hotel clearfix">
-              <div class="photo-hotel">
-                <img src="img/motel.png">
-              </div>
-              <div class="info-hotel">
-                <div class="header-hotel">
-                  <a href="header-hotel">desert quail inn</a>
-                </div>
-                <div class="info">
-                  <div class="detail-hotel">
-                    <div class="type-hotel">мотель</div>
-                    <a class="details" href="details">подробнее</a>
-                  </div>
-                  <div class="detail-hotel">
-                    <div class="type-hotel">от 2000 р.</div>
-                    <a class="details booking" href="booking">Забронировать</a>
-                  </div>
-                </div>
-              </div>
-              <div class="rating clearfix">
-                <div class="stars two-stars"></div>
-                <div class="rating-hotel">рейтинг: 8,9</div>
-              </div>
-            </section>
-            <section class="hotel clearfix">
-              <div class="photo-hotel">
-                <img src="img/villa.png">
-              </div>
-              <div class="info-hotel">
-                <div class="header-hotel">
-                  <a href="header-hotel">villas at poco diablo</a>
-                </div>
-                <div class="info">
-                  <div class="detail-hotel">
-                    <div class="type-hotel">апартаменты</div>
-                    <a class="details" href="details">подробнее</a>
-                  </div>
-                  <div class="detail-hotel">
-                    <div class="type-hotel">от 4000 р.</div>
-                    <a class="details booking" href="booking">Забронировать</a>
-                  </div>
-                </div>
-              </div>
-              <div class="rating clearfix">
-                <div class="stars three-stars"></div>
-                <div class="rating-hotel">рейтинг: 9,2</div>
-              </div>
-            </section>
-            </main>
-            <footer class="footer footer-hotels clearfix">
-              <div class="tag">#VISITSEDONA</div>
-              <div class="social">
-                <a class="social-link tw" href="http://twitter.com"></a>
-                <a class="social-link fb" href="http://www.facebook.com"></a>
-                <a class="social-link yt" href="http://youtube.com"></a>
-              </div>
-              <div class="makers">website by
-                <a href="http://up.htmlacademy.ru" class="academy"></a>
-              </div>
-            </footer>
+          <div class="rating clearfix">
+            <div class="stars"></div>
+            <div class="rating-hotel">рейтинг: 8,5</div>
           </div>
+        </section>
+        <section class="hotel clearfix">
+          <div class="photo-hotel">
+            <img src="img/motel.png" alt="motel" width="135" height="90">
+          </div>
+          <div class="info-hotel">
+            <div class="header-hotel">
+              <a href="header-hotel">desert quail inn</a>
+            </div>
+            <div class="info">
+              <div class="detail-hotel">
+                <div class="type-hotel">мотель</div>
+                <a class="details" href="details">подробнее</a>
+              </div>
+              <div class="detail-hotel">
+                <div class="type-hotel">от 2000 р.</div>
+                <a class="details booking" href="booking">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="rating clearfix">
+            <div class="stars two-stars"></div>
+            <div class="rating-hotel">рейтинг: 8,9</div>
+          </div>
+        </section>
+        <section class="hotel clearfix">
+          <div class="photo-hotel">
+            <img src="img/villa.png"  alt="villa" width="135" height="90">
+          </div>
+          <div class="info-hotel">
+            <div class="header-hotel">
+              <a href="header-hotel">villas at poco diablo</a>
+            </div>
+            <div class="info">
+              <div class="detail-hotel">
+                <div class="type-hotel">апартаменты</div>
+                <a class="details" href="details">подробнее</a>
+              </div>
+              <div class="detail-hotel">
+                <div class="type-hotel">от 4000 р.</div>
+                <a class="details booking" href="booking">Забронировать</a>
+              </div>
+            </div>
+          </div>
+          <div class="rating clearfix">
+            <div class="stars three-stars"></div>
+            <div class="rating-hotel">рейтинг: 9,2</div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer footer-hotels clearfix">
+        <div class="tag">#VISITSEDONA</div>
+        <div class="social">
+          <a class="social-link tw" href="http://twitter.com"></a>
+          <a class="social-link fb" href="http://www.facebook.com"></a>
+          <a class="social-link yt" href="http://youtube.com"></a>
+        </div>
+        <div class="makers">website by
+          <a href="http://up.htmlacademy.ru" class="academy"></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
