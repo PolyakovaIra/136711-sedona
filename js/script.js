@@ -5,20 +5,16 @@ var arrivalDate = selectionForm.querySelector("[id=arrival-date]");
 var departureDate = selectionForm.querySelector("[id=departure-date]");
 var adultNumber = selectionForm.querySelector("[id=adult-number]");
 var childrenNumber = selectionForm.querySelector("[id=children-number]");
-var storage = localStorage.getItem("arrival-date");
 
+if (selectionForm) {
+ selectionForm.classList.add("hidden");
+};
 
-link.addEventListener("click",function(event) {
-  event.preventDefault();
-  selectionForm.classList.add("selection-form-show");
-  arrivalDate.focus();
-
-  if (storage){
-    arrivalDate.value = storage;
-    departureDate.focus();
-  } else {
-    arrivalDate.focus();
-  }
+link.addEventListener("click", function(event) {
+ event.preventDefault();
+ selectionForm.classList.remove("hidden");
+ selectionForm.classList.add("selection-form-show");
+ arrivalDate.focus();
 });
 
 window.addEventListener("keydown",function(event) {
@@ -33,12 +29,7 @@ form.addEventListener("submit", function(event) {
   event.preventDefault();
   selectionForm.classList.add("selection-form-error");
   console.log("Введите даты заезда и выезда");
-} else {
-  localStorage.setItem("arrivalDate", arrivalDate.value);
-  localStorage.setItem("departureDate", departureDate.value);
-  localStorage.setItem("adultNumber", adultNumber.value);
-  localStorage.setItem("childrenNumber", childrenNumber.value);
-}
+} 
 });
 
 function initMap() {

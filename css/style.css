@@ -41,7 +41,6 @@ body {
   padding-bottom: 15px;
   font-size: 14px;
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
 }
@@ -248,8 +247,10 @@ body {
   width: 568px;
   margin: 0 auto;
 }
-.selection-form {
+.hidden {
   display: none;
+}
+.selection-form {
   position: absolute;
   left: 50%;
   width: 568px;
@@ -415,19 +416,19 @@ body {
   background: #ebebeb;
   box-shadow: inset 2px 2px 0 0 #ebebeb, inset -2px -2px 0 0 #ebebeb;
 }
-.numbert:focus {
+.number:focus {
   box-shadow: inset 2px 2px 0 0 #e5e5e5, inset -2px -2px 0 0 #e5e5e5;
   background: #ffffff;
 }
 .person-number-plus {
   display: inline-block;
-  background: #f2f2f2 url("../img/plus_no-active.png") no-repeat center center;
+  background: #f2f2f2 url("../img/plus_no-active.png") no-repeat center;
 }
 .person-number-plus:hover {
-  background: #f2f2f2 url("../img/plus_hvr.png") no-repeat center center;
+  background: #f2f2f2 url("../img/plus_hvr.png") no-repeat center;
 }
 .person-number-plus:active {
-  background: #f2f2f2 url("../img/plus_active.png") no-repeat center center;
+  background: #f2f2f2 url("../img/plus_active.png") no-repeat center;
 }
 .children {
   width: 40px;
@@ -463,6 +464,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .map {
   height: 593px;
+  background: url("../img/map.png") no-repeat center;
 }
 .footer {
   position: absolute;
@@ -560,14 +562,12 @@ input[type=number]::-webkit-outer-spin-button {
   float: left;
   width: 166px;
   margin-right: 100px;
-  text-transform: uppercase;
   line-height: 21px;
   color: #ffffff;
 }
 .option-head {
   font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 20px;
   line-height: 21px;
   color: #ffffff;
@@ -602,7 +602,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .form {
   float: right;
-  text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -699,7 +698,6 @@ input[type=number]::-webkit-outer-spin-button {
   border: 2px solid #ffffff;
   border-radius: 2px;
   outline: none;
-  text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -727,7 +725,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  text-transform: uppercase;
   color: #000000;
 }
 .sorting {
@@ -736,7 +733,6 @@ input[type=number]::-webkit-outer-spin-button {
   vertical-align: middle;
   font-size: 12px;
   line-height: 18px;
-  text-transform: uppercase;
 }
 .sorting-head {
   display: inline-block;
@@ -819,15 +815,14 @@ input[type=number]::-webkit-outer-spin-button {
 .info-hotel {
   float:left;
   width: 265px;
-  text-transform: uppercase;
 }
 .header-hotel {
   width: 230px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  color:#000000;
-  margin-top: -6px;
+  color: #000000;
+  margin-top: -8px;
   margin-bottom: 10px;
   text-decoration: none;
   vertical-align: text-top;
@@ -863,7 +858,6 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 12px;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
 }
 .details {
   display: inline-block;
@@ -875,7 +869,6 @@ input[type=number]::-webkit-outer-spin-button {
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
-  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
@@ -926,7 +919,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 14px;
   color: #666666;
   line-height: 21px;
-  text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
   background: #f2f2f2;

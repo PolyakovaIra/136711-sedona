@@ -3,7 +3,7 @@
   <head>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
@@ -15,10 +15,10 @@
         </div>
         <div class="main-menu">
           <ul class="main-menu-list clearfix">
-            <li class="link"><a href="#info" class="information">Информация</a></li>
-            <li class="link"><a href="#photo" class="information">Фото и видео</a></li>
-            <li class="link"><a href="#map" class="information">Карта штата</a></li>
-            <li class="link"><a href="hotels.html" class="information">Гостиницы</a></li>
+            <li class="link"><a href="#info" class="information">ИНФОРМАЦИЯ</a></li>
+            <li class="link"><a href="#photo" class="information">ФОТО И ВИДЕО</a></li>
+            <li class="link"><a href="#map" class="information">КАРТА ШТАТА</a></li>
+            <li class="link"><a href="hotels.html" class="information">ГОСТИНИЦЫ</a></li>
           </ul>
         </div>
       </header>
@@ -51,7 +51,7 @@
           </div>
           <div class="field">
             <div class="home present"></div>
-            <h2 class="field-header"> СУВЕНИРЫ</h2>
+            <h2 class="field-header">СУВЕНИРЫ</h2>
             <p class="field-text">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСНОГО ПРОИЗВОДСТВА</p>
           </div>
         </section>
@@ -91,32 +91,32 @@
             <div class="form-label">
               <label for="arrival-date" class="label-date">ДАТА ЗАЕЗДА:</label>
               <div class="search-form-calendar">
-                <input id="arrival-date" type="text" class="input-date" value="24 апреля 2016" required>
+                <input id="arrival-date" name="arrival-date" type="text" class="input-date" value="24 апреля 2016" required>
                 <div class="calendar"></div>
               </div>
             </div>
             <div class="form-label">
               <label for="departure-date" class="label-date">ДАТА ВЫЕЗДА:</label>
               <div class="search-form-calendar">
-                <input  id="departure-date" type="text" class="input-date" value="4 июля 2016" required>
+                <input  id="departure-date" name="departure-date" type="text" class="input-date" value="4 июля 2016" required>
                 <div class="calendar"></div>
               </div>
             </div>
             <div class="quantity">
               <div class="quantity-person">
-                <label for="adult-number" class="adult-number-label"> ВЗРОСЛЫЕ:</label>
+                <label for="adult-number" class="adult-number-label">ВЗРОСЛЫЕ:</label>
                 <div class="quantity-person-number">
                   <span class="person-number"></span>
-                  <input id="adult-number" type="number" step="1" min="1" max="6" class="number" value="2" required>
+                  <input id="adult-number" name="adult-number" type="number" step="1" min="1" max="6" class="number" value="2" required>
                   <span class="person-number person-number-plus"></span>
                 </div>
               </div>
               <div class="quantity-person">
-                <label for="children-number" class="adult-number-label children"> ДЕТИ:</label>
+                <label for="children-number" class="adult-number-label children">ДЕТИ:</label>
                 <div class="quantity-person-number">
                   <span class="person-number"></span>
-                  <input id="children-number" type="number" step="1" min="0" max="6" class="number" value="0" required>
-                  <span class="person-number personNumberPlus"></span>
+                  <input id="children-number" name="children-number" type="number" step="1" min="0" max="6" class="number" value="0" required>
+                  <span class="person-number person-number-plus"></span>
                 </div>
               </div>
             </div>
@@ -137,7 +137,7 @@
         </div>
       </footer>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYxss_QatALtPLxBG8fXWVKuhrwgBHSmI&callback=initMap" async defer></script>
-      <script src="js/script.min.js"></script>
+      <script src="js/script.js"></script>
     </div>
   </body>
 </html>
